@@ -10,6 +10,7 @@ import commonmodules.ProDailogs;
 
 public class SplashActivity extends AppCompatActivity {
 ProgressDialog pd;
+    //add comment for mis match report
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
