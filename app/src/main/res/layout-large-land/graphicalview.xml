@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:id="@+id/graphicalview"
+    android:background="@drawable/inner_bg"
+    >
+    <include
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:clickable="false"
+        android:cursorVisible="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:textColor="@color/orange_hint"
+        android:ems="10"
+        android:textSize="30sp"
+        android:id="@+id/editText"
+        android:layout_marginLeft="10dp"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/tableblock_shape"
+        >
+
+        <TextView
+            android:text="Graphical View"
+            android:textColor="@color/white_text"
+            android:textSize="34dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView7"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"/>
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            app:srcCompat="@drawable/tranceperenct_greed"
+            android:id="@+id/imageView5"
+            android:padding="4dp"
+            android:foregroundGravity="center"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="100dp"
+            android:onClick="displayTable"
+            android:layout_gravity="right"
+            android:layout_weight="0.09" />
+
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            app:srcCompat="@drawable/icon_graph_w"
+            android:id="@+id/imageView4"
+            android:layout_marginTop="20dp"
+            android:padding="4dp"
+            android:layout_gravity="right" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/demohgaph"
+        android:layout_marginRight="10dp">
+
+
+        <com.github.mikephil.charting.charts.BarChart
+
+            android:id="@+id/demo"
+            android:layout_width="match_parent"
+            android:layout_height="450dp"
+            android:background="@color/colorWhite"
+            android:layout_below="@+id/graph"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_above="@+id/send_mail">
+
+        </com.github.mikephil.charting.charts.BarChart>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        >
+
+        <Button
+            android:text="SEND EMAIL"
+            android:textColor="@color/white_text"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/button4"
+            android:textSize="24sp"
+            android:layout_weight="1"
+            android:layout_marginLeft="45dp"
+            android:layout_marginRight="5dp"
+            android:onClick="generatePdfFile"
+            android:background="@drawable/orange_button"/>
+
+        <Button
+            android:text="CANCEL"
+            android:textColor="@color/white_text"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/button"
+            android:onClick="gobackToReports"
+            android:layout_weight="1"
+            android:textSize="24sp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="45dp"
+            android:background="@drawable/orange_button"/>
+    </LinearLayout>
+            </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

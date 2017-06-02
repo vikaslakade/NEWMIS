@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/select_report"
+    android:background="@color/activitybackground">
+
+    <include
+        layout="@layout/toolbar"
+
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+
+        >
+
+       <!-- <include
+            layout="@layout/background"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"/>-->
+
+
+        <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:weightSum="1"
+        android:background="@drawable/border">
+
+        <ImageView
+            android:layout_width="82dp"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/icon_report"
+            android:id="@+id/imageView"
+            android:layout_weight="0.09" />
+
+        <TextView
+            android:text="REVENUE REPORT"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/textView4"
+            android:layout_weight="0.24"
+            android:paddingTop="10dp"
+            android:textSize="20sp"
+            android:textColor="@color/textcolor"
+            android:onClick=""/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:weightSum="1"
+        android:background="@drawable/border">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/icon_report"
+            android:id="@+id/imageView2"
+            android:layout_weight="0.91"
+
+          />
+
+        <TextView
+            android:text="SERVICE BILLING REPORT"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/textView5"
+            android:paddingTop="10dp"
+            android:textSize="20sp"
+            android:textColor="@color/textcolor"
+            android:onClick=""/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:weightSum="1"
+        android:background="@drawable/border">
+
+        <ImageView
+            android:layout_width="89dp"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/icon_report"
+            android:id="@+id/imageView3" />
+
+        <TextView
+            android:text="REGISTRATION REPORT"
+            android:layout_width="156dp"
+            android:layout_height="55dp"
+            android:id="@+id/textView6"
+            android:layout_weight="0.70"
+            android:paddingTop="10dp"
+            android:textSize="20sp"
+            android:textColor="@color/textcolor"
+            android:onClick=""/>
+
+    </LinearLayout>
+
+        <!--<ImageView
+            android:layout_width="190dp"
+            android:layout_height="match_parent"
+            android:id="@+id/imageView8"
+            app:srcCompat="@drawable/pivf_logo_white"
+            android:background="@color/activitybackground" />-->
+    </LinearLayout>
+</LinearLayout>

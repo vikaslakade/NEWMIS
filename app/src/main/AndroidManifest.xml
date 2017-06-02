@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.seedinfotech.newmis">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/appp_icon"
+        android:label="Palash MIS"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="label">
+        <activity android:name=".MainActivity"></activity>
+        <activity
+            android:name=".SelectActivity"
+            android:label="" />
+        <activity
+            android:name=".ReportActivity"
+            android:label="" />
+        <activity
+            android:name=".ServiceWiseBillingReport"
+            android:label="" />
+        <activity
+            android:name=".PatientReportActivity"
+            android:label="" />
+        <activity
+            android:name=".Revenue"
+            android:label="" />
+        <activity
+            android:name=".Dashboard"
+
+            android:label="" />
+        <activity
+            android:name=".SplashActivity"
+            android:label="Palash MIS">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".RevenueCountDetailsActivity"
+            android:label="" />
+        <activity android:name=".MailSendingAcivity" android:label=""></activity>
+    </application>
+
+</manifest>

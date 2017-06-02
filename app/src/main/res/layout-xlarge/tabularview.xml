@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:id="@+id/tabularview"
+    android:background="@drawable/inner_bg"
+    >
+    <include
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:textColor="@color/orange_hint"
+        android:clickable="false"
+        android:cursorVisible="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:id="@+id/editText"
+        android:layout_marginLeft="10dp"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/tableblock_shape"
+        >
+
+        <TextView
+            android:text="Tabular View"
+            android:textColor="@color/white_text"
+            android:textSize="24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:id="@+id/textView7"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            />
+
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/icongrid"
+            android:id="@+id/imageView5"
+            android:padding="4dp"
+            android:foregroundGravity="center"
+            android:layout_marginRight="10dp"
+            android:onClick="displayTable"
+            android:layout_gravity="right"
+
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/tranceperent_graph"
+            android:id="@+id/imageView4"
+            android:padding="4dp"
+            android:onClick="displayGraph"
+            android:layout_gravity="right"
+
+            android:layout_weight="0.07" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+
+        android:layout_marginRight="10dp">
+        <android.widget.HorizontalScrollView
+
+            android:layout_alignParentTop="@+id/graph"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:id="@+id/tablepic">
+
+            <de.codecrafters.tableview.TableView
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:table="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/tableView"
+                android:layout_width="820dp"
+                android:layout_height="250dp"
+
+                android:layout_margin="0dp"
+                table:tableView_headerColor="#4c4c4c"
+                android:divider="@color/colorDivider"
+                android:dividerHeight="1dp"
+                table:theme="@style/AppTheme.NoActionBar"
+                android:fadeScrollbars="true"
+                android:gravity="center"
+                />
+        </android.widget.HorizontalScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        >
+
+        <Button
+            android:text="SEND EMAIL"
+            android:textColor="@color/white_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button4"
+            android:layout_weight="1"
+            android:onClick="generatePdfFile"
+            android:layout_marginLeft="45dp"
+            android:layout_marginRight="5dp"
+
+            android:background="@drawable/orange_button"/>
+
+        <Button
+            android:text="CANCEL"
+            android:textColor="@color/white_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="45dp"
+            android:background="@drawable/orange_button"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#F98D33</color><!-- -->
+    <color name="colorAccent">#D6D6D6</color><!--#FF4081-->
+
+<!--for table-->
+    <color name="colorheader">#4C4C4C</color><!--#cae8ea-->
+    <color name="colorDivider">#c1dad7</color>
+    <color name="colorEvenrow">#E2E2E2</color>
+
+<!---->
+    <color name="colorWhite">#ffffff</color>
+    <!--activitybackground color-->
+    <color name="activitybackground">#EFEFF1</color>
+    <!--text color-->
+    <color name="textcolor">#000000</color>
+    <!--tabular view and grapgh view color-->
+    <color name="tab_graph_header_bgcolor">#FA7032</color>
+    <!--orange hint color -->
+    <color name="orange_hint">#ED6140</color>
+    <!--white text color-->
+    <color name="white_text">#ffffff</color>
+
+    <!--dailogue box color-->
+    <color name="dailoguebox_layout_green">#21D633</color>
+    <color name="dailog_bluetext">#627AF6</color>
+    <color name="dailog_graytext">#BDBDBD</color>
+    <color name="dailogbtn_greentext">#00B700</color>
+    <color name="dailog_greentext">#0FA029</color>
+
+    <!--navigation drawer color-->
+    <color name="nav_bgcolor">#FA5832</color>
+    <color name="designation_col">#424A4D</color>
+    <color name="username_col">#000800</color>
+
+
+
+</resources>

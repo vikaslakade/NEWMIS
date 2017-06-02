@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@drawable/pivf_logo_white"
+    android:layout_height="match_parent">
+    <include
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/activitybackground"
+        >
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+
+        android:textColor="@color/orange_hint"
+        android:clickable="false"
+        android:cursorVisible="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+
+        android:ems="10"
+        android:id="@+id/report_title"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:text="Enter Email"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/textView8"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"
+        android:layout_marginLeft="20dp"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="51dp"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:drawableRight="@drawable/ic_send_mail"
+            android:id="@+id/send_emailid"
+            android:layout_weight="1"
+            android:hint="Enter email"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:text="SEND"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:id="@+id/button6"
+            android:onClick="sendEmailFinal"
+            android:layout_weight="1"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="5dp"
+            android:textColor="@color/white_text"
+            android:background="@drawable/orange_button"/>
+
+        <Button
+            android:text="CANCEL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button5"
+            android:layout_weight="1"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="40dp"
+            android:textColor="@color/white_text"
+            android:background="@drawable/orange_button"/>
+    </LinearLayout>
+
+
+</LinearLayout>
+
+
+</LinearLayout>

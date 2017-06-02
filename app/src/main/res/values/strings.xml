@@ -1,0 +1,13 @@
+<resources>
+    <string-array name="service_array">
+        <item> <FONT COLOR="#FFFFFF"><b>Unit Code</b></FONT></item>
+        <item><FONT COLOR="#FFFFFF">Bill Type</FONT></item>
+        <item><FONT COLOR="#FFFFFF">Net Amount (Rs.)</FONT></item>
+        <item><FONT COLOR="#FFFFFF">Petient Count</FONT></item>
+    </string-array>
+
+
+    <string name="app_name">"MIS"</string>
+    <string name="title_activity_patient_report">gtrhged</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
